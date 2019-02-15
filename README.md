@@ -6,5 +6,5 @@ This is a terminal based calculator
 
 * How to do math in Python
 * How to use Int, Float and Str
-* How to use functions and if- & while-statements
+* How to use functions and how to use if- & while-statements
 
