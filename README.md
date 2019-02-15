@@ -1,6 +1,6 @@
 # Calculator
 
-This is a terminal based calculator
+This is a simple Python calculator
 
 # What I Learned
 
