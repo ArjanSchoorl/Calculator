@@ -1,6 +1,6 @@
-from check_number import check_num
-from check_operator import check_op
 from time import sleep
+import sys
+
 
 # Give number
 # Give operator
@@ -8,6 +8,35 @@ from time import sleep
 # Check numbers and operator
 # Print the result
 # Restart
+
+def check_num(val):
+    try:
+        float(val)
+        return True
+    except ValueError:
+        return False
+
+
+def check_op(val):
+    if val == "-":
+        return True
+    elif val == "+":
+        return True
+    elif val == "*":
+        return True
+    elif val == "/":
+        return True
+    else:
+        return False
+
+def user_restart():
+    answer = input("Continue? Yes or No: ").lower()
+    if answer == "yes" or answer == "y":
+        return True
+    else:
+        print("Thank you for using this calculator!")
+        return False
+
 
 i = 0
 print("Calculator")
@@ -35,28 +64,40 @@ while True:
             i = 0
         else:
             if operator == "-":
-                num = int(number)
-                num2 = int(number2)
+                num = float(number)
+                num2 = float(number2)
                 result = num - num2
                 print("Answer: " + str(result))
-                i = 0
+                if user_restart():
+                    i = 0
+                else:
+                    sys.exit()
             elif operator == "+":
-                num = int(number)
-                num2 = int(number2)
+                num = float(number)
+                num2 = float(number2)
                 result = num + num2
                 print("Answer: " + str(result))
-                i = 0
+                if user_restart():
+                    i = 0
+                else:
+                    sys.exit()
             elif operator == "*":
-                num = int(number)
-                num2 = int(number2)
+                num = float(number)
+                num2 = float(number2)
                 result = num * num2
                 print("Answer: " + str(result))
-                i = 0
+                if user_restart():
+                    i = 0
+                else:
+                    sys.exit()
             elif operator == "/":
-                num = int(number)
-                num2 = int(number2)
+                num = float(number)
+                num2 = float(number2)
                 result = num / num2
                 print("Answer: " + str(result))
-                i = 0
+                if user_restart():
+                    i = 0
+                else:
+                    sys.exit()
             else:
-                i = 1
+                sys.exit()
