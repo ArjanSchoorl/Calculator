@@ -1,7 +1,6 @@
 from time import sleep
 import sys
 
-# This is a test
 # Give number
 # Give operator
 # Give number 2
