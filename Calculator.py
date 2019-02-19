@@ -78,8 +78,8 @@ while True:
                 if user_restart():
                     i = 0
                 else:
-                    sleep(2)
                     print("Thank you for using this calculator!")
+                    sleep(2)
                     sys.exit()
             elif operator == "*":
                 num = float(number)
@@ -89,8 +89,8 @@ while True:
                 if user_restart():
                     i = 0
                 else:
-                    sleep(2)
                     print("Thank you for using this calculator!")
+                    sleep(2)
                     sys.exit()
             elif operator == "/":
                 num = float(number)
@@ -100,10 +100,10 @@ while True:
                 if user_restart():
                     i = 0
                 else:
-                    sleep(2)
                     print("Thank you for using this calculator!")
+                    sleep(2)
                     sys.exit()
             else:
-                sleep(2)
                 print("Thank you for using this calculator!")
+                sleep(2)
                 sys.exit()
