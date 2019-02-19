@@ -25,16 +25,13 @@ def check_op(val):
         return True
     elif val == "/":
         return True
-    else:
-        return False
+    return False
 
 def user_restart():
     answer = input("Continue? Yes or No: ").lower()
     if answer == "yes" or answer == "y":
         return True
-    else:
-        print("Thank you for using this calculator!")
-        return False
+    return False
 
 
 i = 0
@@ -70,6 +67,7 @@ while True:
                 if user_restart():
                     i = 0
                 else:
+                    print("Thank you for using this calculator!")
                     sys.exit()
             elif operator == "+":
                 num = float(number)
@@ -79,6 +77,7 @@ while True:
                 if user_restart():
                     i = 0
                 else:
+                    print("Thank you for using this calculator!")
                     sys.exit()
             elif operator == "*":
                 num = float(number)
@@ -88,6 +87,7 @@ while True:
                 if user_restart():
                     i = 0
                 else:
+                    print("Thank you for using this calculator!")
                     sys.exit()
             elif operator == "/":
                 num = float(number)
@@ -97,6 +97,8 @@ while True:
                 if user_restart():
                     i = 0
                 else:
+                    print("Thank you for using this calculator!")
                     sys.exit()
             else:
+                print("Thank you for using this calculator!")
                 sys.exit()
