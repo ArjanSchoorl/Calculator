@@ -61,4 +61,4 @@ while True:
                 print("Answer: " + str(float(number_1) / float(number_2)))
                 state = 0
             else:
-                print("There went something wrong!")
+                print("Oops! There went something wrong!")
