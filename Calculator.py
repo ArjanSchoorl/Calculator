@@ -1,9 +1,8 @@
 from time import sleep
 import sys
 
+
 # This function checks if the val is a float or not
-
-
 def check_number(val):
     try:
         float(val)
@@ -11,9 +10,8 @@ def check_number(val):
     except ValueError:
         return False
 
+
 # This function checks what operator val is
-
-
 def check_operator(val):
     if val == "-":
         return True
