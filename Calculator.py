@@ -2,6 +2,8 @@ from time import sleep
 import sys
 
 # This function checks if the val is a float or not
+
+
 def check_number(val):
     try:
         float(val)
@@ -10,6 +12,8 @@ def check_number(val):
         return False
 
 # This function checks what operator val is
+
+
 def check_operator(val):
     if val == "-":
         return True
@@ -20,6 +24,7 @@ def check_operator(val):
     elif val == "/":
         return True
     return False
+
 
 # Declare state and print calculator
 state = 0
