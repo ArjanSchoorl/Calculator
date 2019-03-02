@@ -65,3 +65,4 @@ while True:
                 state = 0
             else:
                 print("Oops! There went something wrong!")
+                sys.exit()
