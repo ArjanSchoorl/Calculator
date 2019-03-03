@@ -3,7 +3,7 @@ import sys
 
 
 # This function checks if the val is a float or not
-def check_number(val):
+def check_number(val, val2):
     try:
         float(val)
         return True
@@ -38,31 +38,22 @@ while True:
         state = 1
 
     while state == 1:
-        if not check_number(number_1):
-            print("Number 'one' is not a number")
-            sleep(1)
-            state = 0
-        elif not check_number(number_2):
-            print("Number 'two' is not a number")
-            sleep(1)
-            state = 0
-        elif not check_operator(operator):
-            print("You did not use a operator")
-            sleep(1)
-            state = 0
+        if not check_number(number_1, number_2) or not check_operator(operator):
+            print("There went something wrong!")
         else:
             if operator == "-":
-                print("Answer: " + str(float(number_1) - float(number_2)))
-                state = 0
+                result = float(number_1) - float(number_2)
+                print(f"Answer: {str(result)}")
             elif operator == "+":
-                print("Answer: " + str(float(number_1) + float(number_2)))
-                state = 0
+                result = float(number_1) + float(number_2)
+                print(f"Answer: {str(result)}")
             elif operator == "*":
-                print("Answer: " + str(float(number_1) * float(number_2)))
-                state = 0
+                result = float(number_1) * float(number_2)
+                print(f"Answer: {str(result)}")
             elif operator == "/":
-                print("Answer: " + str(float(number_1) / float(number_2)))
-                state = 0
+                result = float(number_1) / float(number_2)
+                print(f"Answer: {str(result)}")
             else:
-                print("Oops! There went something wrong!")
-                sys.exit()
+                pass
+        sleep(0.5)
+        state = 0
