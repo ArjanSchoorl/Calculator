@@ -5,22 +5,31 @@ import sys
 # This function checks if the val is a float or not
 def check_number(val, val2):
     try:
+        # Trying to get the float of val & val2
         float(val)
+        float(val2)
+         # Return True if val & val2 are floats
         return True
     except ValueError:
-        return False
+        # Return False if val & val2 are not floats
+        return False 
 
 
-# This function checks what operator val is
+# This function checks what operator the value is
 def check_operator(val):
+    # Operator is subtraction
     if val == "-":
         return True
+    # Operator is addition
     elif val == "+":
         return True
+    # Operator is multiplication
     elif val == "*":
         return True
+    # Operator is division
     elif val == "/":
         return True
+    # val is not an operator? -> return False
     return False
 
 
