@@ -8,11 +8,11 @@ def check_number(val, val2):
         # Trying to get the float of val & val2
         float(val)
         float(val2)
-         # Return True if val & val2 are floats
+        # Return True if val & val2 are floats
         return True
     except ValueError:
         # Return False if val & val2 are not floats
-        return False 
+        return False
 
 
 # This function checks what operator the value is
