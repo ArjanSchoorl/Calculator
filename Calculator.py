@@ -33,13 +33,11 @@ def check_operator(val):
     return False
 
 
-# Declare state and print calculator
-state = 0
-print("Calculator")
+def main():
+    # Declare state and print calculator
+    print("Calculator")
+    state = 0
 
-
-# Start the calculator
-while True:
     while state == 0:
         # Get all inputs to calculate
         print("")
@@ -82,3 +80,7 @@ while True:
         # Change the state to zero
         sleep(0.5)
         state = 0
+
+
+# Start the calculator
+main()
