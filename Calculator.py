@@ -28,9 +28,8 @@ def result():
         calculate(num1, num2, operator)
         return True
     # If inputs are not a float/operator then give an error and return False
-    else:
-        print("Input Error")
-        return False
+    print("Input Error")
+    return False
 
 
 # This function checks if num1 and num2 is a float or not
@@ -43,8 +42,7 @@ def check_input(num1, num2, operator):
         # If num1 and num2 are a float then it will check if operator is an operator and return True
         if operator == "-" or operator == "+" or operator == "*" or operator == "/":
             return True
-    # Return False if num1 or num2 are not floats or operator is not an operator
-    except:
+    except ValueError:
         return False
 
 
